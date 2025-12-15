@@ -1,0 +1,320 @@
+/* -----------------------------
+   Global Styles
+----------------------------- */
+
+:root {
+  --petrol: #398C92;
+  --dark: #404040;
+  --light-bg: #F6F6F6;
+  --border: #DDDDDD;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* Layout helpers */
+.container {
+  width: 92%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mt {
+  margin-top: 1.5rem;
+}
+
+/* -----------------------------
+   Buttons
+----------------------------- */
+.btn {
+  display: inline-block;
+  padding: 0.85rem 1.4rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+
+.btn.primary {
+  background: var(--petrol);
+  border: 2px solid var(--petrol);
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: #2c6e73;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid var(--petrol);
+  color: var(--petrol);
+}
+
+.btn.outline:hover {
+  background: var(--petrol);
+  color: #fff;
+}
+
+/* -----------------------------
+   Hero
+----------------------------- */
+.hero {
+  padding: 3.5rem 0 4rem 0;
+  background: var(--light-bg);
+  border-bottom: 1px solid var(--border);
+  text-align: center; /* für Logo zentriert */
+}
+
+/* Logo oben */
+.logo-placeholder {
+  width: 500px;
+  height: 150px;
+  
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-weight: 600;
+  margin: 0 auto 2rem auto; /* zentriert und Abstand nach unten */
+}
+
+.logo-placeholder img {
+  max-width: 500px;
+  height: auto;
+  display: block;
+}
+
+.hero-inner {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center; /* Text und Card mittig ausrichten */
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.hero-text {
+  flex: 1.4;
+  min-width: 280px;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero-text .lead {
+  margin-bottom: 1.6rem;
+  font-size: 1.1rem;
+}
+
+/* Hero Card */
+.hero-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 320px;
+  min-width: 280px;
+}
+
+.hero-card strong {
+  font-size: 1.1rem;
+}
+
+.hero-card ul {
+  margin: 1rem 0;
+  padding-left: 1.2rem;
+}
+
+.hero-card li {
+  margin-bottom: 0.4rem;
+}
+
+/* -----------------------------
+   Sections
+----------------------------- */
+section {
+  padding: 3rem 0;
+}
+
+h2 {
+  font-size: 1.65rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Cards & Grids */
+.grid-3,
+.grid-2 {
+  display: grid;
+  gap: 1.3rem;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card,
+.result-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 1.3rem;
+  border-radius: 8px;
+}
+
+/* About split */
+.split {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Checklist */
+.checklist li {
+  margin-bottom: 0.6rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.checklist li::before {
+  content: "✔";
+  color: var(--petrol);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Bio list */
+.bio li {
+  margin-bottom: 0.4rem;
+}
+
+/* -----------------------------
+   Forms
+----------------------------- */
+.form {
+  max-width: 600px;
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 1.6rem;
+  border-radius: 8px;
+}
+
+.form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.form input {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.4rem 0 1rem 0;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Form message */
+.form-message {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: var(--petrol);
+}
+
+/* -----------------------------
+   FAQ
+----------------------------- */
+details {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0.7rem 0;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+details p {
+  margin-top: 0.7rem;
+}
+
+/* -----------------------------
+   Footer
+----------------------------- */
+.footer {
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+}
+
+.footer p {
+  margin-bottom: 0.4rem;
+}
+
+.muted {
+  color: #777;
+}
+
+/* Erfolgspopup */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #398C92; /* Petrol */
+  color: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+  display: none;
+  z-index: 1000;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.popup button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #fff;
+  color: #398C92;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
