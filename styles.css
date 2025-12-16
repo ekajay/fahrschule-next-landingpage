@@ -75,7 +75,7 @@ body {
   padding: 3.5rem 0 4rem 0;
   background: var(--light-bg);
   border-bottom: 1px solid var(--border);
-  text-align: center; /* für Logo zentriert */
+  
 }
 
 /* Logo oben */
@@ -317,4 +317,5 @@ details p {
   border-radius: 4px;
   cursor: pointer;
 }
+
 
