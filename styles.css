@@ -93,7 +93,7 @@ body {
 }
 
 .logo-placeholder img {
-  max-width: 500px;
+  max-width: 300px;
   height: auto;
   display: block;
 }
@@ -317,6 +317,7 @@ details p {
   border-radius: 4px;
   cursor: pointer;
 }
+
 
 
 
