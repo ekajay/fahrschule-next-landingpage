@@ -89,7 +89,7 @@ body {
   justify-content: center;
   color: #777;
   font-weight: 600;
-  margin: 0 auto 2rem auto; /* zentriert und Abstand nach unten */
+  margin: 0 0 2rem 0; /* Abstand nach unten */
 }
 
 .logo-placeholder img {
@@ -317,5 +317,6 @@ details p {
   border-radius: 4px;
   cursor: pointer;
 }
+
 
 
